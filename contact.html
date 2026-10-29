@@ -1,62 +1,34 @@
-
 <!DOCTYPE html>
+<!--
+  VOIDBIT // Small details. Clean execution.
+  IDENTITY: VOIDBIT   MODE: PORTFOLIO   STORAGE: STATIC
+  Page: contact. Short on purpose: the code does the talking.
+  Hint for the observant: up up down down left right left right b a.
+  Curious how it works? Good. That is the whole point. View source is welcome.
+-->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VOIDBIT | Contact</title>
-    <link rel="stylesheet" href="style.css">
+<!-- Encoding first. UTF-8 saves everyone from mojibake. -->
+<meta charset="UTF-8">
+<!-- Mobile-first: the site should scale gracefully to any screen. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VOIDBIT | Contact</title>
+<meta name="description" content="Get in touch with Elias.">
+<!-- Favicon is an inline SVG: one blinking-cursor underscore, zero extra requests. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23070a08'/%3E%3Ctext x='5' y='23' font-size='20' font-family='monospace' fill='%2339ff14'%3E_%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-    <header class="page-header">
-        <p class="terminal-command">~/voidbit $ connect</p>
-        <h1>Let's Connect<span class="accent">_</span></h1>
-        <p>
-            I'm building, learning, and exploring one project at a time.
-            Interested in development, Linux, or ethical cybersecurity?
-            Let's connect.
-        </p>
-    </header>
-
-    <main class="contact-panel">
-        <p class="terminal-command">[ CONNECTION OPTIONS ]</p>
-
-        <h2>Find me online.</h2>
-
-        <p>
-            Explore my code, follow my progress, or see what I'm building.
-        </p>
-
-        <a class="btn"
-           href="https://github.com/eliaslangat023-del"
-           target="_blank"
-           rel="noopener noreferrer">
-            Visit My GitHub ↗
-        </a>
-
-        <p class="contact-note">
-            More ways to connect may be added as the portfolio grows.
-        </p>
-    </main>
-
-    <footer class="site-footer">
-        <p>VOIDBIT<span class="accent">_</span></p>
-        <p>Think logically. Build intelligently. Improve constantly.</p>
-        <a href="https://github.com/eliaslangat023-del"
-           target="_blank"
-           rel="noopener noreferrer">
-            GitHub ↗
-        </a>
-        <p class="copyright">© 2026 VOIDBIT. Built with curiosity and code.</p>
-    </footer>
-
+<!-- Navigation: aria-current marks the active page for screen readers and for the lime underline. -->
+<header class="top"><a class="brand" href="index.html">VOIDBIT<span>_</span></a><nav aria-label="Main"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="skills.html">Skills</a><a href="contact.html" aria-current="page">Contact</a></nav></header>
+<main>
+<!-- Fake shell prompt. Decorative, but it sets the tone. -->
+<p class="cmd">~/voidbit $ connect</p>
+<h1>Contact</h1><section class="panel"><h2>Find me online</h2><p>My code and progress are on GitHub. Open an issue or follow along.</p><a class="btn" href="https://github.com/eliaslangat023-del" target="_blank" rel="noopener noreferrer">Visit GitHub</a></section>
+</main>
+<!-- Footer: signature block. Every page ends the same way. -->
+<footer><p class="brand">VOIDBIT<span>_</span></p><p>Think logically. Build intelligently. Improve constantly.</p><p><a href="https://github.com/eliaslangat023-del" target="_blank" rel="noopener noreferrer">GitHub</a></p><p class="small">&copy; 2026 Elias. Built with curiosity and code.</p></footer>
+<script src="script.js" defer></script>
+<!-- EOF. Thanks for reading the source. -->
 </body>
 </html>

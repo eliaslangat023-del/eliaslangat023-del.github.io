@@ -1,136 +1,47 @@
 <!DOCTYPE html>
-<html>
+<!--
+  VOIDBIT // Small details. Clean execution.
+  IDENTITY: VOIDBIT   MODE: PORTFOLIO   STORAGE: STATIC
+  Page: home. Boot sequence lives in script.js.
+  Hint for the observant: up up down down left right left right b a.
+  Curious how it works? Good. That is the whole point. View source is welcome.
+-->
+<html lang="en">
 <head>
+<!-- Encoding first. UTF-8 saves everyone from mojibake. -->
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<!-- Mobile-first: the site should scale gracefully to any screen. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VOIDBIT | Elias, Computer Science Student & Developer</title>
+<meta name="description" content="Elias builds Python tools and studies Linux and ethical cybersecurity. Portfolio of VOIDBIT projects.">
+<!-- Favicon is an inline SVG: one blinking-cursor underscore, zero extra requests. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23070a08'/%3E%3Ctext x='5' y='23' font-size='20' font-family='monospace' fill='%2339ff14'%3E_%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
-<title> VOIDBIT | Developer </title>
 </head>
 <body>
-<nav>
-<a href="index.html">Home</a>
-<a href="skills.html">Skills</a>
-<a href="contact.html">Contact</a>
-<a href="projects.html">Projects</a>
-</nav>
-<section>
-<button id="initBtn" type="button" >Initialize VOIDBIT</button>
-</section>
-<section>
-<p id="status"></p>
-</section>
-
-<section class="hero">
-    <h1>Code. Explore. Secure.</h1>
-
-    <p>
-        Computer Science student building tools with Python,
-        exploring Linux, and learning ethical hacking one step at a time.
-    </p>
-
-    <div class="hero-buttons">
-        <a href="projects.html" class="btn">Explore Projects</a>
-        <a href="skills.html" class="btn btn-outline">My Skills</a>
-    </div>
-</section>
-
-<section class="terminal-panel">
-    <p class="terminal-command">~/voidbit $ whoami</p>
-    <h2>A student. A builder. A work in progress.</h2>
-    <p>Learning by building, testing, and improving.</p>
-</section>
-
-<section id="skills">
-<h2>My Skills</h2>
-<ul>
-<li>Python</li>
-<li> HTML</li>
-<li>Cybersecurity</li>
-<li>CSS</li>
-</ul>
- </section>
-<section id="contact">
-<h2>Find Me</h2>
-<a href="https://github.com/eliaslangat023-del">Visit Website</a>
-</section>
-
-<section class="featured-projects">
-    <h2>Featured Projects<span class="accent">_</span></h2>
-    <p class="section-intro">
-        Small projects. Practical skills. Continuous improvement.
-    </p>
-
-    <div class="project-grid">
-
-        <article class="project-card">
-            <h3>Python Log Analyzer</h3>
-            <p>
-                A Python tool that reads log files and identifies
-                successful or failed events.
-            </p>
-            <p class="tech-stack">Python · File Handling · Text Analysis</p>
-        </article>
-
-        <article class="project-card">
-            <h3>Student Management System</h3>
-            <p>
-                A student records application for managing information,
-                grades, attendance, and searches.
-            </p>
-            <p class="tech-stack">Python · JSON · CSV</p>
-        </article>
-
-        <article class="project-card">
-            <h3>VOIDBIT Security Tools</h3>
-            <p>
-                A growing collection of terminal-based utilities
-                for authorized security testing and learning.
-            </p>
-            <p class="tech-stack">Kali Linux · Python · Networking</p>
-        </article>
-
-    </div>
-
-    <a href="projects.html" class="projects-link">View All Projects →</a>
-</section>
-
-<section class="about-section">
-    <h2>About Me<span class="accent">_</span></h2>
-
-    <p>
-        I'm a Computer Science student interested in software
-        development, Linux, and ethical cybersecurity.
-    </p>
-
-    <p>
-        I learn by building practical projects, solving problems,
-        and exploring how systems work behind the scenes.
-    </p>
-
-    <p>
-        My goal is to turn curiosity into useful skills
-        and reliable software.
-    </p>
-</section>
-
+<!-- Navigation: aria-current marks the active page for screen readers and for the lime underline. -->
+<header class="top"><a class="brand" href="index.html">VOIDBIT<span>_</span></a><nav aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="projects.html">Projects</a><a href="skills.html">Skills</a><a href="contact.html">Contact</a></nav></header>
+<main>
+<!-- Fake shell prompt. Decorative, but it sets the tone. -->
+<p class="cmd">~/voidbit $ whoami</p>
+<!-- HERO: who I am in one breath -->
+<section class="hero"><h1>Code. Explore. Secure.</h1>
+<p class="lead">I'm Elias, a Computer Science student at Kibabii University. I build Python tools, work in Linux, and study ethical hacking through authorised labs.</p>
+<!-- Typed line: script.js types it out. Without JS, the full text simply shows. -->
+<p class="typed" id="typed">$ learn --by building --then testing --repeat</p>
+<div class="actions"><a class="btn" href="projects.html">View projects</a><a class="btn ghost" href="contact.html">Get in touch</a></div></section>
+<!-- SYSTEM CHECK: the button is wired up in script.js. Press it. -->
+<section class="panel" aria-labelledby="t"><h2 id="t">System check</h2>
+<p>Run the boot sequence.</p><button id="initBtn" type="button">Initialize VOIDBIT</button>
+<pre id="status" aria-live="polite"></pre></section>
+<!-- FEATURED: first three projects, the rest live on projects.html -->
+<section><h2>Featured projects</h2><div class="grid"><article class="card"><h3>VOIDBIT Student Database</h3><p>A command-line student records system: add, search and update students, track attendance, set assessment weights and grade boundaries, and export reports. Existing records are preserved and every change is backed up and tested.</p><p class="tags">Python, JSON, CSV</p><p class="status">Built and being improved</p><a href="https://github.com/eliaslangat023-del/student-management-system" target="_blank" rel="noopener noreferrer">View on GitHub</a></article><article class="card"><h3>voidkit</h3><p>Three tools behind one launcher. voidstego hides data in PNG/BMP images and WAV audio using LSB steganography, with optional password encryption. voidexif reads EXIF metadata, decodes GPS, exports JSON/CSV and writes metadata-stripped copies. voidscan sweeps a folder for hidden payloads and metadata leaks.</p><p class="tags">Python, Tkinter, Digital forensics</p><p class="status">Working toolkit for authorised learning use</p></article><article class="card"><h3>VOIDBIT NetDoctor</h3><p>Diagnoses why a machine or lab cannot connect. It runs checks in order (interface, gateway, DHCP, routing, DNS, MTU, proxy) and explains each result.</p><p class="tags">Python, Networking, Linux</p><p class="status">Active</p></article></div><p><a href="projects.html">See all projects</a></p></section>
+<!-- ABOUT: short, because the projects say more than a paragraph can -->
+<section class="about"><h2>About</h2><p>I'm in Year 2 of a BSc in Computer Science. I learn by building: each project starts small, gets tested, and then improves. My focus is reliable software, Linux and security fundamentals.</p></section>
+</main>
+<!-- Footer: signature block. Every page ends the same way. -->
+<footer><p class="brand">VOIDBIT<span>_</span></p><p>Think logically. Build intelligently. Improve constantly.</p><p><a href="https://github.com/eliaslangat023-del" target="_blank" rel="noopener noreferrer">GitHub</a></p><p class="small">&copy; 2026 Elias. Built with curiosity and code.</p></footer>
 <script src="script.js" defer></script>
-
-<footer class="site-footer">
-    <p>VOIDBIT<span class="accent">_</span></p>
-
-    <p>Think logically. Build intelligently. Improve constantly.</p>
-
-    <a href="https://github.com/eliaslangat023-del"
-       target="_blank"
-       rel="noopener noreferrer">
-        GitHub ↗
-    </a>
-
-    <p class="copyright">
-        © 2026 VOIDBIT. Built with curiosity and code.
-    </p>
-</footer>
-
+<!-- EOF. Thanks for reading the source. -->
 </body>
 </html>

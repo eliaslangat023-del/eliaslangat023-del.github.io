@@ -1,105 +1,37 @@
-
 <!DOCTYPE html>
+<!--
+  VOIDBIT // Small details. Clean execution.
+  IDENTITY: VOIDBIT   MODE: PORTFOLIO   STORAGE: STATIC
+  Page: skills. Honest inventory, including what I am still learning.
+  Hint for the observant: up up down down left right left right b a.
+  Curious how it works? Good. That is the whole point. View source is welcome.
+-->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VOIDBIT | Skills</title>
-    <link rel="stylesheet" href="style.css">
+<!-- Encoding first. UTF-8 saves everyone from mojibake. -->
+<meta charset="UTF-8">
+<!-- Mobile-first: the site should scale gracefully to any screen. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VOIDBIT | Skills</title>
+<meta name="description" content="Languages, tools and security skills.">
+<!-- Favicon is an inline SVG: one blinking-cursor underscore, zero extra requests. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23070a08'/%3E%3Ctext x='5' y='23' font-size='20' font-family='monospace' fill='%2339ff14'%3E_%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-    <header class="page-header">
-        <p class="terminal-command">~/voidbit $ skills --list</p>
-        <h1>My Skills<span class="accent">_</span></h1>
-        <p>
-            Technologies I'm using, practical skills I'm developing,
-            and areas I'm exploring as a Computer Science student.
-        </p>
-    </header>
-
-    <main>
-
-        <section class="skills-section">
-            <h2>Programming<span class="accent">_</span></h2>
-            <div class="skills-grid">
-                <article class="project-card">
-                    <h3>Python</h3>
-                    <p>Building scripts, analysing files, and working with data.</p>
-                </article>
-
-                <article class="project-card">
-                    <h3>Java</h3>
-                    <p>Learning object-oriented programming and classes.</p>
-                </article>
-
-                <article class="project-card">
-                    <h3>JavaScript</h3>
-                    <p>Adding interactivity to web pages.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="skills-section">
-            <h2>Web Development<span class="accent">_</span></h2>
-            <div class="skills-grid">
-                <article class="project-card">
-                    <h3>HTML</h3>
-                    <p>Structuring pages with semantic elements and links.</p>
-                </article>
-
-                <article class="project-card">
-                    <h3>CSS</h3>
-                    <p>Styling layouts, responsive pages, and hover effects.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="skills-section">
-            <h2>Systems &amp; Cybersecurity<span class="accent">_</span></h2>
-            <div class="skills-grid">
-                <article class="project-card">
-                    <h3>Linux / Kali Linux</h3>
-                    <p>Using the terminal, managing files, and running tools.</p>
-                </article>
-
-                <article class="project-card">
-                    <h3>Networking &amp; Nmap</h3>
-                    <p>Learning network discovery and port scanning in authorised labs.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="learning-section">
-            <h2>Currently Learning<span class="accent">_</span></h2>
-            <ul>
-                <li>JavaScript and interactive web development</li>
-                <li>Responsive website design</li>
-                <li>Networking fundamentals</li>
-                <li>Ethical hacking and lab-based security testing</li>
-                <li>Building more reliable Python applications</li>
-            </ul>
-        </section>
-
-    </main>
-
-    <footer class="site-footer">
-        <p>VOIDBIT<span class="accent">_</span></p>
-        <p>Learn. Build. Test. Improve.</p>
-        <a href="https://github.com/eliaslangat023-del"
-           target="_blank"
-           rel="noopener noreferrer">
-            Visit GitHub ↗
-        </a>
-        <p class="copyright">© 2026 VOIDBIT. Built with curiosity and code.</p>
-    </footer>
-
+<!-- Navigation: aria-current marks the active page for screen readers and for the lime underline. -->
+<header class="top"><a class="brand" href="index.html">VOIDBIT<span>_</span></a><nav aria-label="Main"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="skills.html" aria-current="page">Skills</a><a href="contact.html">Contact</a></nav></header>
+<main>
+<!-- Fake shell prompt. Decorative, but it sets the tone. -->
+<p class="cmd">~/voidbit $ skills --list</p>
+<h1>Skills</h1><p class="lead">What I use and what I am still learning.</p>
+<div class="grid"><div class="card"><h3>Languages</h3><ul><li>Python</li><li>Java (object-oriented programming)</li><li>JavaScript</li><li>HTML and CSS</li></ul></div><div class="card"><h3>Web and tools</h3><ul><li>Node.js and Express</li><li>Firebase and Firestore</li><li>Git and GitHub</li><li>VS Code</li></ul></div><div class="card"><h3>Systems and security</h3><ul><li>Linux and Kali Linux</li><li>Networking fundamentals</li><li>Nmap and network enumeration</li><li>Metadata and steganography basics</li></ul></div></div>
+<section class="panel"><h2>Currently learning</h2><ul><li>Network enumeration with Nmap (Hack The Box Academy)</li><li>Interactive and responsive web development</li><li>Building more reliable Python applications</li></ul></section>
+<section class="about"><h2>Education</h2><p>BSc Computer Science, Kibabii University (Year 2).</p></section>
+</main>
+<!-- Footer: signature block. Every page ends the same way. -->
+<footer><p class="brand">VOIDBIT<span>_</span></p><p>Think logically. Build intelligently. Improve constantly.</p><p><a href="https://github.com/eliaslangat023-del" target="_blank" rel="noopener noreferrer">GitHub</a></p><p class="small">&copy; 2026 Elias. Built with curiosity and code.</p></footer>
+<script src="script.js" defer></script>
+<!-- EOF. Thanks for reading the source. -->
 </body>
 </html>

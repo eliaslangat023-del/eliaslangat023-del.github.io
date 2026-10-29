@@ -1,77 +1,34 @@
-
 <!DOCTYPE html>
+<!--
+  VOIDBIT // Small details. Clean execution.
+  IDENTITY: VOIDBIT   MODE: PORTFOLIO   STORAGE: STATIC
+  Page: projects. Every card here is something I actually built.
+  Hint for the observant: up up down down left right left right b a.
+  Curious how it works? Good. That is the whole point. View source is welcome.
+-->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VOIDBIT | Projects</title>
-    <link rel="stylesheet" href="style.css">
+<!-- Encoding first. UTF-8 saves everyone from mojibake. -->
+<meta charset="UTF-8">
+<!-- Mobile-first: the site should scale gracefully to any screen. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VOIDBIT | Projects</title>
+<meta name="description" content="Python, Node.js and security projects by Elias.">
+<!-- Favicon is an inline SVG: one blinking-cursor underscore, zero extra requests. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23070a08'/%3E%3Ctext x='5' y='23' font-size='20' font-family='monospace' fill='%2339ff14'%3E_%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-    <header class="page-header">
-        <p class="terminal-command">~/voidbit $ ls projects/</p>
-        <h1>My Projects<span class="accent">_</span></h1>
-        <p>
-            Tools and applications I've been building while
-            learning programming, software development, and security.
-        </p>
-    </header>
-
-    <main class="projects-page">
-
-        <article class="project-card">
-            <p class="project-category">PYTHON / LOG ANALYSIS</p>
-            <h2>Python Log Analyzer</h2>
-            <p>
-                A Python utility that reads log files and identifies
-                events such as successful and failed operations.
-            </p>
-            <p class="tech-stack">Python · File Handling · Text Processing</p>
-            <p class="project-status">Status: In development</p>
-        </article>
-
-        <article class="project-card">
-            <p class="project-category">PYTHON / DATA MANAGEMENT</p>
-            <h2>Student Management System</h2>
-            <p>
-                A command-line application for managing student records,
-                searching data, tracking attendance, and handling grades.
-            </p>
-            <p class="tech-stack">Python · JSON · CSV</p>
-            <p class="project-status">Status: Built and being improved</p>
-        </article>
-
-        <article class="project-card">
-            <p class="project-category">CYBERSECURITY / TERMINAL</p>
-            <h2>VOIDBIT Security Tools</h2>
-            <p>
-                A collection of terminal-based utilities for network
-                reconnaissance, security learning, and authorized lab testing.
-            </p>
-            <p class="tech-stack">Kali Linux · Python · Networking</p>
-            <p class="project-status">Status: Ongoing toolkit</p>
-        </article>
-
-    </main>
-
-    <footer class="site-footer">
-        <p>VOIDBIT<span class="accent">_</span></p>
-        <p>Think logically. Build intelligently. Improve constantly.</p>
-        <a href="https://github.com/eliaslangat023-del"
-           target="_blank"
-           rel="noopener noreferrer">
-            Visit GitHub ↗
-        </a>
-        <p class="copyright">© 2026 VOIDBIT. Built with curiosity and code.</p>
-    </footer>
-
+<!-- Navigation: aria-current marks the active page for screen readers and for the lime underline. -->
+<header class="top"><a class="brand" href="index.html">VOIDBIT<span>_</span></a><nav aria-label="Main"><a href="index.html">Home</a><a href="projects.html" aria-current="page">Projects</a><a href="skills.html">Skills</a><a href="contact.html">Contact</a></nav></header>
+<main>
+<!-- Fake shell prompt. Decorative, but it sets the tone. -->
+<p class="cmd">~/voidbit $ ls projects/</p>
+<h1>Projects</h1><p class="lead">Tools I have built while learning software development and security.</p><div class="grid"><article class="card"><h3>VOIDBIT Student Database</h3><p>A command-line student records system: add, search and update students, track attendance, set assessment weights and grade boundaries, and export reports. Existing records are preserved and every change is backed up and tested.</p><p class="tags">Python, JSON, CSV</p><p class="status">Built and being improved</p><a href="https://github.com/eliaslangat023-del/student-management-system" target="_blank" rel="noopener noreferrer">View on GitHub</a></article><article class="card"><h3>voidkit</h3><p>Three tools behind one launcher. voidstego hides data in PNG/BMP images and WAV audio using LSB steganography, with optional password encryption. voidexif reads EXIF metadata, decodes GPS, exports JSON/CSV and writes metadata-stripped copies. voidscan sweeps a folder for hidden payloads and metadata leaks.</p><p class="tags">Python, Tkinter, Digital forensics</p><p class="status">Working toolkit for authorised learning use</p></article><article class="card"><h3>VOIDBIT NetDoctor</h3><p>Diagnoses why a machine or lab cannot connect. It runs checks in order (interface, gateway, DHCP, routing, DNS, MTU, proxy) and explains each result.</p><p class="tags">Python, Networking, Linux</p><p class="status">Active</p></article><article class="card"><h3>Survey Platform</h3><p>A platform for writing jobs: anonymous sign-in, wallet, survey access, with job posting, claiming, reviews and an earnings ledger planned. Security comes first; M-Pesa payments follow once the foundation is tested.</p><p class="tags">Node.js, Express, Firebase</p><p class="status">Prototype</p><a href="https://github.com/eliaslangat023-del/survey-platform" target="_blank" rel="noopener noreferrer">View on GitHub</a></article><article class="card"><h3>Python Log Analyzer</h3><p>Reads log files and identifies successful and failed events.</p><p class="tags">Python, File handling</p><p class="status">In development</p></article></div><p class="note">Security tools are built for learning and for systems I own or am authorised to test.</p>
+</main>
+<!-- Footer: signature block. Every page ends the same way. -->
+<footer><p class="brand">VOIDBIT<span>_</span></p><p>Think logically. Build intelligently. Improve constantly.</p><p><a href="https://github.com/eliaslangat023-del" target="_blank" rel="noopener noreferrer">GitHub</a></p><p class="small">&copy; 2026 Elias. Built with curiosity and code.</p></footer>
+<script src="script.js" defer></script>
+<!-- EOF. Thanks for reading the source. -->
 </body>
 </html>
