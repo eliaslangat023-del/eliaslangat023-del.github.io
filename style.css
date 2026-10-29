@@ -1,0 +1,331 @@
+body {
+	background-color: black;
+	color: white;
+	font-family: Arial, sans-serif;
+	margin: 40px auto;
+	max-width: 900px;
+}
+h1{
+	color: lime;
+	font-size: 42px;
+}
+a {
+	color: lime;
+	text-decoration: none;
+}
+nav a:hover {
+	color:white;
+}
+.project-card {
+	border: 1px solid lime;
+	padding: 20px;
+	margin-top: 20px;
+	border-radius: 8px;
+	background-color:#080808;
+	transition: background-color 0.3s ease;
+}
+.project-card:hover {
+	background-color: #102015;
+}
+nav {
+	margin-bottom: 25px;
+	display: flex;
+	gap:30px;
+	flex-wrap: wrap;
+	align-items:center;
+	padding-bottom:12px;
+	border-bottom:1px solid #245c39;
+}
+button  {
+	background-color: #000000;
+	color: lime;
+	border: 1px solid lime;
+	padding: 12px 20px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+button:hover {
+	background-color:#102015;
+}
+.hero {
+	padding:40px 0;
+	margin-bottom:30px;
+	border-bottom:1px solid #245c39;
+}
+.hero h1 {
+	font-size:48px;
+	margin-bottom:15px;
+}
+@media
+(max-width: 600px){ 
+body {
+        margin: 20px;
+}
+h1 { 
+        font-size: 32px;
+    }
+.hero h1 {
+        font-size: 32px;
+}
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border: 1px solid lime;
+    border-radius: 5px;
+    background-color: lime;
+    color: black;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #102015;
+    color: lime;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: lime;
+}
+
+.terminal-panel {
+    background-color: #0D1710;
+    border: 1px solid #245C39;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 30px 0;
+}
+
+.terminal-command {
+    color: lime;
+    font-family: monospace;
+    margin-bottom: 15px;
+}
+
+.terminal-panel h2 {
+    color: white;
+    font-size: 22px;
+}
+
+.terminal-panel p:last-child {
+    color: #A3A3A3;
+}
+
+.featured-projects {
+    margin: 50px 0;
+}
+
+.featured-projects h2 {
+    font-size: 28px;
+}
+
+.accent {
+    color: lime;
+}
+
+.section-intro {
+    color: #A3A3A3;
+    margin-bottom: 25px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.project-card h3 {
+    color: lime;
+}
+
+.tech-stack {
+    color: #A3A3A3;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+.projects-link {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.about-section {
+    margin: 50px 0;
+    padding: 25px 0;
+    border-top: 1px solid #245C39;
+}
+
+.about-section h2 {
+    font-size: 28px;
+}
+
+.about-section p {
+    color: #A3A3A3;
+    line-height: 1.8;
+    max-width: 700px;
+}
+
+.site-footer {
+    margin-top: 60px;
+    padding: 25px 0;
+    border-top: 1px solid #245C39;
+    text-align: center;
+}
+
+.site-footer p {
+    color: #A3A3A3;
+}
+
+.site-footer > p:first-child {
+    color: lime;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.page-header {
+    padding: 35px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #245C39;
+}
+
+.page-header h1 {
+    margin: 10px 0;
+}
+
+.page-header > p:last-child {
+    color: #A3A3A3;
+    line-height: 1.7;
+    max-width: 650px;
+}
+
+.projects-page {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.projects-page .project-card {
+    margin-top: 0;
+}
+
+.project-category {
+    color: #39FF14;
+    font-family: monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.projects-page .project-card h2 {
+    font-size: 22px;
+}
+
+.project-status {
+    color: #A3A3A3;
+    font-size: 13px;
+    border-top: 1px solid #245C39;
+    padding-top: 12px;
+}
+
+@media (max-width: 600px) {
+    .projects-page {
+        grid-template-columns: 1fr;
+    }
+}
+
+.skills-section,
+.learning-section {
+    margin: 40px 0;
+}
+
+.skills-section h2,
+.learning-section h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.skills-grid .project-card {
+    margin-top: 0;
+}
+
+.skills-grid h3 {
+    color: lime;
+}
+
+.skills-grid p,
+.learning-section li {
+    color: #A3A3A3;
+    line-height: 1.7;
+}
+
+.learning-section {
+    padding: 25px;
+    background-color: #0D1710;
+    border: 1px solid #245C39;
+    border-radius: 8px;
+}
+
+.learning-section ul {
+    padding-left: 22px;
+}
+
+.learning-section li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-panel {
+    margin: 40px 0;
+    padding: 30px;
+    background-color: #0D1710;
+    border: 1px solid #245C39;
+    border-radius: 8px;
+}
+
+.contact-panel h2 {
+    color: white;
+    font-size: 26px;
+}
+
+.contact-panel > p:not(.terminal-command) {
+    color: #A3A3A3;
+    line-height: 1.8;
+}
+
+.contact-panel .btn {
+    margin-top: 15px;
+}
+
+.contact-note {
+    font-size: 13px;
+    margin-top: 25px;
+}
